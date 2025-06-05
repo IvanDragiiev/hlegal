@@ -1,21 +1,17 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
-       url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
-       url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 .gradient_bg {
   background: radial-gradient(at bottom left, #643e72 15%, #323264 60%);
 }
@@ -132,6 +128,9 @@ body {
 .header .header_wrapper .nav_list .list_link:hover {
   opacity: 0.7;
   text-decoration: underline;
+}
+.header .header_nav {
+  z-index: 1;
 }
 .header .header_title {
   position: absolute;
