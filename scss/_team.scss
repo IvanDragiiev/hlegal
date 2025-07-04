@@ -1,0 +1,45 @@
+.team_title {
+    font-weight: 700;
+    font-size: 38px;
+    background: linear-gradient(298deg, #ef8080 0%, #f0145a 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    @media (max-width: 400px) {
+        font-size: 28px;
+    }
+}
+
+.team_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 516px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team_img {
+        border-radius: 12px;
+        margin-bottom: 15px;
+        @media (max-width: 375px) {
+            max-height: 300px;
+        }
+    }
+    .team_member {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .team_role {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 157%;
+        color: #b3b3ba;
+        margin-bottom: 82px;
+    }
+}

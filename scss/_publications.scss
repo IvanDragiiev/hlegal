@@ -1,0 +1,18 @@
+.publication_page-title {
+    text-align: center;
+    color: #323264;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 42px;
+}
+
+@media (max-width: 769px) {
+    .publication_page-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .publication_card:nth-child(3) {
+            grid-column: span 1;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+}

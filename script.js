@@ -21,3 +21,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+const form = document.getElementById("contactForm");
+const status = form.querySelector(".form_status");
+const button = form.querySelector(".form_btn");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    button.disabled = true;
+    button.textContent = "Sending...";
+
+    setTimeout(() => {
+        status.textContent = "❌ Что-то пошло не так. Попробуйте позже.";
+        status.style.color = "#f0145a";
+        status.hidden = false;
+
+        button.disabled = false;
+        button.textContent = "Send message";
+    }, 1500);
+});
